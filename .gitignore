@@ -1,10 +1,3 @@
 .DS_Store
-.git
-.svn
-xcuserdata/
-xcshareddata/
-*.xcworkspace
+node_modules/
 build/
-*.docset
-Configurations/local_config.h
-*.un~
