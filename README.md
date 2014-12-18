@@ -2,7 +2,23 @@
 
 #Email Randomizer Dynamic Value (Paw Extension)
 
-This a Paw Extension that generates random email addresses.
+A Paw Extension that generates random email addresses.
+
+## Installation
+
+```shell
+npm install
+cake build
+cake install
+```
+
+## Development
+
+During development, watch for changes:
+
+```shell
+cake watch
+```
 
 ##License
 
