@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/LuckyMarmot/Paw-EmailRandomizerDynamicValue.svg?branch=master)](https://travis-ci.org/LuckyMarmot/Paw-EmailRandomizerDynamicValue)
+[![Build Status](https://travis-ci.org/luckymarmot/Paw-EmailRandomizerDynamicValue.svg?branch=master)](https://travis-ci.org/luckymarmot/Paw-EmailRandomizerDynamicValue)
 
 #Email Randomizer Dynamic Value (Paw Extension)
 
@@ -12,4 +12,4 @@ Copyright © 2014 Paw Inc.
 
 ##Contributors
 
-See [Contributors](https://github.com/LuckyMarmot/Paw-EmailRandomizerDynamicValue/graphs/contributors).
+See [Contributors](https://github.com/luckymarmot/Paw-EmailRandomizerDynamicValue/graphs/contributors).
