@@ -2,7 +2,7 @@
 
 #Email Randomizer Dynamic Value (Paw Extension)
 
-A Paw Extension that generates random email addresses.
+A [Paw Extension](http://luckymarmot.com/paw/extensions/) that generates random email addresses.
 
 ## Installation
 
