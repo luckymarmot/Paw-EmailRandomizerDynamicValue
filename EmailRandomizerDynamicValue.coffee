@@ -7,7 +7,7 @@ EmailRandomizerDynamicValue = () ->
         "hi",
         "webmaster",
         "postmaster",
-        
+
         # Note: the following names have been randomly generated using:
         # http://listofrandomnames.com/
         "evon.burleigh",
@@ -70,7 +70,7 @@ EmailRandomizerDynamicValue = () ->
         "fb.com",
         "gmail.com",
         "yahoo.com",
-        
+
         # Note: the following domain names have been found on
         # https://gist.github.com/tbrianjones/5992856
         "1033edge.com",
@@ -312,8 +312,12 @@ EmailRandomizerDynamicValue = () ->
 
     @evaluate = () ->
         name_idx = Math.floor(Math.random() * @names.length)
-        domain_idx = Math.floor(Math.random() * @domains.length)
-        "#{@names[name_idx]}@#{@domains[domain_idx]}"
+        if this.safe
+            domain = 'example.com'
+        else
+            domain_idx = Math.floor(Math.random() * @domains.length)
+            domain = @domains[domain_idx]
+        "#{@names[name_idx]}@#{domain}"
 
     @title = () ->
         "Email Randomizer"
@@ -323,5 +327,12 @@ EmailRandomizerDynamicValue = () ->
 
 EmailRandomizerDynamicValue.identifier = "com.luckymarmot.PawExtensions.EmailRandomizerDynamicValue"
 EmailRandomizerDynamicValue.title = "Email Randomizer Dynamic Value"
-EmailRandomizerDynamicValue.inputs = []
+EmailRandomizerDynamicValue.inputs = [
+    new InputField(
+        'safe',
+        'Use safe emails (@example.com)',
+        'Checkbox',
+        { defaultValue: false }
+    )
+]
 registerDynamicValueClass EmailRandomizerDynamicValue
